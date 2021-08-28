@@ -21,7 +21,7 @@ import './App.css';
 function App() {
 	return (
 		<div className='App'>
-			<Router basename='/'>
+			<Router basename={process.env.PUBLIC_URL}>
 				<Switch>
 					<Route exact path='/graphtraversal' component={GraphTraversal} />
 					<Route exact path='/sort' component={Sorting} />
